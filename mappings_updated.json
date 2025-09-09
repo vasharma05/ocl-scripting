@@ -1,0 +1,157 @@
+[
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896225/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918186/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896225/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918198/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896225/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918202/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896225/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918180/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896225/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918184/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896225/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918182/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896225/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918190/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896225/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918206/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896227/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918204/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896227/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918192/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896227/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918188/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896227/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918194/"
+    },
+    {
+        "map_type": "Q-AND-A",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896227/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918196/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7913370/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897654/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7913370/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897656/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7913370/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897662/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7913370/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/8918200/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7913370/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897652/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7913370/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897658/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7896217/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897666/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897680/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897668/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897672/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897676/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897674/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897682/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897684/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897686/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897670/"
+    },
+    {
+        "map_type": "CONCEPT-SET",
+        "from_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897678/",
+        "to_concept_url": "/orgs/UVL-Burundi/sources/uvl-ciel/concepts/7897688/"
+    }
+]

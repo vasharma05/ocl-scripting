@@ -1,0 +1,5 @@
+.env
+.DS_Store
+all_*.json
+my-py/*
+*.cpython*
