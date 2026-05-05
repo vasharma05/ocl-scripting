@@ -12,6 +12,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urljoin
 from requests.auth import HTTPDigestAuth
 import base64
+import traceback
 
 RESULTS_FILE = "verify-concepts-in-openmrs/concepts_verification_results.json"
 REST_API_ENDPOINT = "/openmrs/ws/rest/v1/concept/"
@@ -33,15 +34,21 @@ def check_concept_exists(uuid):
         if response.status_code == 200:
             data = response.json()
             return uuid, data
-        else:
+        elif response.status_code == 404:
+            print(f"Concept {uuid} is not present")
             return uuid, None
-    except Exception:
+        else:
+            print(f"Error: {response.status_code} {response.text}")
+            return uuid, None
+    except Exception as e:
+
+        print(traceback.format_exc(e))
         return uuid, "Error"
 
 
 def main():
     present = {}
-    absent = {}
+    absent = set()
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_to_uuid = {
             executor.submit(check_concept_exists, uuid): uuid
@@ -52,9 +59,9 @@ def main():
             if data:
                 present[uuid] = data
             else:
-                absent[uuid] = None
+                absent.add(uuid)
     with open(RESULTS_FILE, "w") as f:
-        json.dump({"present": present, "absent": absent}, f)
+        json.dump({"present": present, "absent": list(absent)}, f)
     print(f"Results written to {RESULTS_FILE}")
 
 

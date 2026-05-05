@@ -21,15 +21,15 @@ OCL_API_DOMAIN = os.getenv("OCL_API_DOMAIN")
 OCL_API_TOKEN = os.getenv("OCL_API_TOKEN")
 COLLECTION_OR_SOURCE_URLS = [
     # "/orgs/UVL-Burundi/collections/uvl-drug-entry/",
-    "/orgs/UVL-Burundi/collections/uvl-dx/",
-    "/orgs/UVL-Burundi/collections/uvl-labtests/",
-    "/orgs/UVL-Burundi/collections/uvl-procedures/",
+    # "/orgs/UVL-Burundi/collections/uvl-dx/",
+    # "/orgs/UVL-Burundi/collections/uvl-labtests/v2/",
+    # "/orgs/UVL-Burundi/collections/uvl-procedures/",
     # "/orgs/UVL-Burundi/collections/uvl-forms/",
     # "/orgs/UVL-Burundi/collections/uvl-drugs/",
     # "/orgs/UVL-Burundi/sources/uvl-ciel/",
     # "/orgs/UVL-Burundi/sources/uvl-custom/",
     # "/orgs/MSFOCG/collections/TEMP-PIUS/",
-    # "/orgs/MSFOCG/collections/iraq-mosul/"
+    "/orgs/MSFOCG/collections/iraq-mosul/1.68/"
 ]
 COLLECTION_OR_SOURCE_NAME = "uvl-drug-entry"
 
@@ -103,7 +103,14 @@ def save_concepts_to_json(
     """
     output_file = get_file_name(collection_or_source_name)
     with open(output_file, "w") as f:
-        json.dump(concepts, f, indent=2)
+        json.dump(
+            {
+                "concepts": concepts,
+                "all_urls": [concept["url"] for concept in concepts],
+            },
+            f,
+            indent=2,
+        )
     print(f"Saved {len(concepts)} concepts to {output_file}")
 
 

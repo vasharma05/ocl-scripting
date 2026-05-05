@@ -1,0 +1,67 @@
+{
+  "locale_name": "fr",
+  "name_type": "Fully-Specified",
+  "locale_preferred": true,
+  "preferred_set": {
+    "/orgs/MSF/sources/MSF/concepts/3047/": "Rapatrié"
+  },
+  "no_match": {
+    "/orgs/MSFOCG/sources/MSFOCG/concepts/5564907/": {
+      "expected_name": "État civil",
+      "available_names_in_locale": [
+        {
+          "name": "État civil",
+          "name_type": "Fully Specified",
+          "locale_preferred": false
+        }
+      ]
+    },
+    "/orgs/MSFOCG/sources/MSFOCG/concepts/5564919/": {
+      "expected_name": "Profession (MSFOCG)",
+      "available_names_in_locale": [
+        {
+          "name": "Profession (MSFOCG)",
+          "name_type": "Fully Specified",
+          "locale_preferred": false
+        }
+      ]
+    },
+    "/orgs/MSFOCG/sources/MSFOCG/concepts/5506293/": {
+      "expected_name": "Statut légal (MSFOCG)",
+      "available_names_in_locale": [
+        {
+          "name": "Statut légal (MSFOCG)",
+          "name_type": "Fully Specified",
+          "locale_preferred": false
+        }
+      ]
+    },
+    "/orgs/MSF/sources/MSF/concepts/1423/": {
+      "expected_name": "Non applicable",
+      "available_names_in_locale": [
+        {
+          "name": "N/A",
+          "name_type": "SHORT",
+          "locale_preferred": false
+        },
+        {
+          "name": "Non applicable",
+          "name_type": "Fully Specified",
+          "locale_preferred": false
+        }
+      ]
+    }
+  },
+  "failed": {
+    "/orgs/MSF/sources/MSF/concepts/30/": {
+      "expected_name": "Ami",
+      "status_code": 400,
+      "body": "{\"names\":[\"All names except short names must be unique for a concept and locale\"]}"
+    },
+    "/orgs/MSF/sources/MSF/concepts/31/": {
+      "expected_name": "Voisin",
+      "status_code": 400,
+      "body": "{\"names\":[\"All names except short names must be unique for a concept and locale\"]}"
+    }
+  }
+}

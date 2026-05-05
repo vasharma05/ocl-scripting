@@ -5,8 +5,13 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urljoin
 from are_concepts_present_resources import all_concepts
 from common import get_api_domain, get_source_or_collection_url
+import time
+
 
 concept_presence_map = {"present": {}, "absent": {}}
+
+BATCH_SIZE = 300
+DELAY_BETWEEN_BATCHES = 60
 
 
 def verify_concepts_present(
@@ -72,20 +77,27 @@ def verify_concept_url(concept_to_check, response):
 
 
 def main(source_or_collection_url, concepts_to_check, is_concept_url):
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        futures = [
-            executor.submit(
-                verify_concepts_present,
-                source_or_collection_url,
-                concept_to_check,
-                is_concept_url,
-            )
-            for concept_to_check in concepts_to_check
-        ]
+    for i in range(0, len(concepts_to_check), BATCH_SIZE):
+        batch = concepts_to_check[i : i + BATCH_SIZE]
+        print(f"Processing batch {i} to {i + BATCH_SIZE - 1}")
 
-    for future in as_completed(futures):
-        concept_to_check, response = future.result()
-        verify_concept_id(concept_to_check, response, is_concept_url)
+        with ThreadPoolExecutor(max_workers=20) as executor:
+            futures = [
+                executor.submit(
+                    verify_concepts_present,
+                    source_or_collection_url,
+                    concept_to_check,
+                    is_concept_url,
+                )
+                for concept_to_check in batch
+            ]
+
+        for future in as_completed(futures):
+            concept_to_check, response = future.result()
+            verify_concept_id(concept_to_check, response, is_concept_url)
+
+        if i + BATCH_SIZE < len(concepts_to_check):
+            time.sleep(DELAY_BETWEEN_BATCHES)
 
 
 if __name__ == "__main__":

@@ -19,6 +19,32 @@ def extract_form_concepts(form_data):
     return concepts
 
 
+def extract_form_labels(form_data):
+    labels = set()
+    pages = form_data["pages"]
+    for page in pages:
+        labels.add(page["label"])
+        for section in page["sections"]:
+            labels.add(section["label"])
+            for question in section["questions"]:
+                labels.add(question.get("label", ""))
+                questionOptions = question["questionOptions"]
+                if "answers" in questionOptions:
+                    for answer in questionOptions["answers"]:
+                        labels.add(answer["label"])
+                if "buttonLabel" in questionOptions:
+                    labels.add(questionOptions["buttonLabel"])
+                if "questionInfo" in question:
+                    labels.add(question["questionInfo"])
+                if "value" in question:
+                    if type(question["value"]) == list:
+                        for value in question["value"]:
+                            labels.add(value)
+                    else:
+                        labels.add(question["value"])
+    return labels
+
+
 all_concepts = set()
 form_concepts_map = {}
 
@@ -27,8 +53,12 @@ for form in forms:
     with open(path, "r") as f:
         form_data = json.load(f)
     concepts = extract_form_concepts(form_data)
+    labels = extract_form_labels(form_data)
     all_concepts.update(concepts)
-    form_concepts_map[form] = list(concepts)
+    form_concepts_map[form] = {
+        "concepts": list(concepts),
+        "labels": {label: label for label in sorted(labels)},
+    }
 
 with open("get_form_concepts/results.json", "w") as f:
     results = {
