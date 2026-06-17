@@ -14,7 +14,7 @@ load_dotenv(find_dotenv())
 OCL_API_DOMAIN = os.getenv("OCL_API_DOMAIN")
 OCL_API_TOKEN = os.getenv("OCL_API_TOKEN")
 COLLECTION_OR_SOURCE_URLS = [
-    "/orgs/UVL-Burundi/collections/uvl-drug-entry/v1/",
+    # "/orgs/UVL-Burundi/collections/uvl-drug-entry/v1/",
     # "/orgs/UVL-Burundi/collections/uvl-dx/",
     # "/orgs/UVL-Burundi/collections/uvl-labtests/",
     # "/orgs/UVL-Burundi/collections/uvl-procedures/",
@@ -25,6 +25,7 @@ COLLECTION_OR_SOURCE_URLS = [
     # "/orgs/UVL-Burundi/sources/uvl-custom/",
     # "/orgs/MSFOCG/collections/TEMP-PIUS/",
     # "/orgs/MSFOCG/collections/iraq-mosul/"
+    "/orgs/MSFOCG/collections/lime-emr/"
     # "/orgs/UVL-Burundi/collections/uvl-allergens/",
     # "/orgs/UVL-Burundi/collections/uvl-vital-signs/",
     # "/orgs/UVL-Burundi/collections/uvl-cause-of-death/",

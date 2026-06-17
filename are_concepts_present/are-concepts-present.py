@@ -4,7 +4,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urljoin
 from are_concepts_present_resources import all_concepts
-from common import get_api_domain, get_source_or_collection_url
+from common import get_api_domain, get_source_or_collection_url, get_headers
 import time
 
 
@@ -28,7 +28,7 @@ def verify_concepts_present(
         url = urljoin(urljoin(get_api_domain(), source_or_collection_url), "concepts/")
         params = {"q": concept_to_check}
     try:
-        response = requests.get(url, params=params)
+        response = requests.get(url, params=params, headers=get_headers())
         response.raise_for_status()
         return (concept_to_check, response)
     except requests.exceptions.HTTPError as e:

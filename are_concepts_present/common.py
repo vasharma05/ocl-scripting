@@ -8,6 +8,7 @@ load_dotenv(find_dotenv())
 # Defining constants
 OCL_API_DOMAIN = os.getenv("OCL_API_DOMAIN")
 OCL_API_TOKEN = os.getenv("OCL_API_TOKEN")
+print(OCL_API_TOKEN)
 BASE_URL = f"{OCL_API_DOMAIN}"
 headers = {
     "Authorization": f"Token {OCL_API_TOKEN}",
